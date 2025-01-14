@@ -24,6 +24,7 @@
     <div id="container">
         <h1>Cartes dans un deck neuf</h1>
         <?php
+            shuffle($cartes) ;
         foreach($cartes as $carte) : ?>
             <img class="carte" src="cartes/<?php echo $carte['image']; ?>" alt="<?php echo $carte['nom']; ?>">
         <?php endforeach ?>
